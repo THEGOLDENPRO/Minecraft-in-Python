@@ -27,6 +27,11 @@ def update():
 	if held_keys['3']: block_pick = 3
 	if held_keys['4']: block_pick = 4
 
+	# Exit game UwU
+	#-----------------
+	if held_keys[Keys.escape]:
+		sys.exit(0)
+
 class Voxel(Button):
 	def __init__(self, position = (0,0,0), texture = grass_texture):
 		super().__init__(
